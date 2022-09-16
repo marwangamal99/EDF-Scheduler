@@ -1,0 +1,403 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.37.0.0
+Copyright (C) 2022 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Marwan Gamal, Student, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.37.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.18
+Assembler:       Armasm.exe V6.18
+Linker/Locator:  ArmLink.exe V6.18
+Library Manager: ArmAr.exe V6.18
+Hex Converter:   FromElf.exe V6.18
+CPU DLL:         SARMCM3.DLL V5.37.0.0
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      UL2CM3.DLL V1.164.7.0
+Dialog DLL:      TCM.DLL V1.56.1.0
+ 
+<h2>Project:</h2>
+C:\Users\MarwanGamalAhmedAbda\OneDrive - Faculty of Engineering Ain Shams University\Desktop\ARM Project - egFWD\ARM Project.uvprojx
+Project File Date:  07/28/2022
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.18', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
+Rebuild target 'Target 1'
+APP/main.c(1): warning: In file included from...
+./APP/Led_Ctrl\App_LedCtrl_Interface.h(16): warning: In file included from...
+./COMMON\Std_Types.h(19): warning: In file included from...
+./COMMON/Platform_Types.h(69): warning: 'long long' is an extension when C99 mode is not enabled [-Wlong-long]
+typedef unsigned long long*   uint64_ptr;
+                 ^
+./COMMON/Platform_Types.h(70): warning: 'long long' is an extension when C99 mode is not enabled [-Wlong-long]
+typedef signed long long*     sint64_ptr;
+               ^
+2 warnings generated.
+compiling main.c...
+MCAL/1. GPIO/Gpio_Program.c(15): warning: In file included from...
+./MCAL/1. GPIO/Gpio_Interface.h(17): warning: In file included from...
+./COMMON\Std_Types.h(19): warning: In file included from...
+./COMMON/Platform_Types.h(69): warning: 'long long' is an extension when C99 mode is not enabled [-Wlong-long]
+typedef unsigned long long*   uint64_ptr;
+                 ^
+./COMMON/Platform_Types.h(70): warning: 'long long' is an extension when C99 mode is not enabled [-Wlong-long]
+typedef signed long long*     sint64_ptr;
+               ^
+MCAL/1. GPIO/Gpio_Program.c(75): warning: binary integer literals are a GNU extension [-Wgnu-binary-literal]
+        SYSCTL_RCGCGPIO_R = 0b00000001;        /* Enable clock for PORTA and allow time for clock to start */
+                            ^
+MCAL/1. GPIO/Gpio_Program.c(86): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+        GPIO_PORTA_PCTL_R  = 0xFFFFFFFF & ~(0xF << (pin_num*4));     /* Clear PMCx bits for the pin to use it as GPIO pin */
+                                        ~ ^~~~~~~~~~~~~~~~~~~~~
+MCAL/1. GPIO/Gpio_Program.c(107): warning: binary integer literals are a GNU extension [-Wgnu-binary-literal]
+        SYSCTL_RCGCGPIO_R |= 0b00000010;         /* Enable clock for PORTB and allow time for clock to start */
+                             ^
+MCAL/1. GPIO/Gpio_Program.c(118): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+        GPIO_PORTB_PCTL_R  = 0xFFFFFFFF & ~(0xF << (pin_num*4));       /* Clear PMCx bits for the pin to use it as GPIO pin */
+                                        ~ ^~~~~~~~~~~~~~~~~~~~~
+MCAL/1. GPIO/Gpio_Program.c(137): warning: binary integer literals are a GNU extension [-Wgnu-binary-literal]
+        SYSCTL_RCGCGPIO_R |= 0b00000100;         /* Enable clock for PORTC and allow time for clock to start */
+                             ^
+MCAL/1. GPIO/Gpio_Program.c(148): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+        GPIO_PORTC_PCTL_R  = 0xFFFFFFFF & ~(0xF << (pin_num*4));       /* Clear PMCx bits for the pin to use it as GPIO pin */
+                                        ~ ^~~~~~~~~~~~~~~~~~~~~
+MCAL/1. GPIO/Gpio_Program.c(172): warning: binary integer literals are a GNU extension [-Wgnu-binary-literal]
+        SYSCTL_RCGCGPIO_R |= 0b00001000;         /* Enable clock for PORTD and allow time for clock to start */
+                             ^
+MCAL/1. GPIO/Gpio_Program.c(184): warning: // comments are not allowed in this language [-Wcomment]
+        //if(pin_num == PIN7_ID)    /* Pin that's needed to be unlocked */
+        ^
+MCAL/1. GPIO/Gpio_Program.c(183): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+        GPIO_PORTD_PCTL_R  = 0xFFFFFFFF & ~(0xF << (pin_num*4));       /* Clear PMCx bits for the pin to use it as GPIO pin */
+                                        ~ ^~~~~~~~~~~~~~~~~~~~~
+MCAL/1. GPIO/Gpio_Program.c(207): warning: binary integer literals are a GNU extension [-Wgnu-binary-literal]
+        SYSCTL_RCGCGPIO_R |= 0b00010000;         /* Enable clock for PORTE and allow time for clock to start */
+                             ^
+MCAL/1. GPIO/Gpio_Program.c(218): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+        GPIO_PORTE_PCTL_R  = 0xFFFFFFFF & ~(0xF << (pin_num*4));      /* Clear PMCx bits for the pin to use it as GPIO pin */
+                                        ~ ^~~~~~~~~~~~~~~~~~~~~
+MCAL/1. GPIO/Gpio_Program.c(237): warning: binary integer literals are a GNU extension [-Wgnu-binary-literal]
+        SYSCTL_RCGCGPIO_R |= 0b00100000;         /* Enable clock for PORTF and allow time for clock to start */
+                             ^
+MCAL/1. GPIO/Gpio_Program.c(249): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+        GPIO_PORTF_PCTL_R  = 0xFFFFFFFF & ~(0xF << (pin_num*4));      /* Clear PMCx bits for the pin to use it as GPIO pin */
+                                        ~ ^~~~~~~~~~~~~~~~~~~~~
+MCAL/1. GPIO/Gpio_Program.c(57): warning: variable 'delay' set but not used [-Wunused-but-set-variable]
+  volatile uint32 delay;
+                  ^
+MCAL/1. GPIO/Gpio_Program.c(567): warning: implicit conversion loses integer precision: 'volatile unsigned long' to 'uint8' (aka 'unsigned char') [-Wimplicit-int-conversion]
+      value = GPIO_PORTA_DATA_R;
+            ~ ^~~~~~~~~~~~~~~~~
+./MCAL/1. GPIO/Gpio_Private.h(77): note: expanded from macro 'GPIO_PORTA_DATA_R'
+#define GPIO_PORTA_DATA_R       (*((volatile unsigned long *)0x400043FC))
+                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MCAL/1. GPIO/Gpio_Program.c(570): warning: implicit conversion loses integer precision: 'volatile unsigned long' to 'uint8' (aka 'unsigned char') [-Wimplicit-int-conversion]
+      value = GPIO_PORTB_DATA_R;
+            ~ ^~~~~~~~~~~~~~~~~
+./MCAL/1. GPIO/Gpio_Private.h(78): note: expanded from macro 'GPIO_PORTB_DATA_R'
+#define GPIO_PORTB_DATA_R       (*((volatile unsigned long *)0x400053FC))
+                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MCAL/1. GPIO/Gpio_Program.c(573): warning: implicit conversion loses integer precision: 'volatile unsigned long' to 'uint8' (aka 'unsigned char') [-Wimplicit-int-conversion]
+      value = GPIO_PORTC_DATA_R;
+            ~ ^~~~~~~~~~~~~~~~~
+./MCAL/1. GPIO/Gpio_Private.h(79): note: expanded from macro 'GPIO_PORTC_DATA_R'
+#define GPIO_PORTC_DATA_R       (*((volatile unsigned long *)0x400063FC))
+                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MCAL/1. GPIO/Gpio_Program.c(576): warning: implicit conversion loses integer precision: 'volatile unsigned long' to 'uint8' (aka 'unsigned char') [-Wimplicit-int-conversion]
+      value = GPIO_PORTD_DATA_R;
+            ~ ^~~~~~~~~~~~~~~~~
+./MCAL/1. GPIO/Gpio_Private.h(80): note: expanded from macro 'GPIO_PORTD_DATA_R'
+#define GPIO_PORTD_DATA_R       (*((volatile unsigned long *)0x400073FC))
+                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MCAL/1. GPIO/Gpio_Program.c(579): warning: implicit conversion loses integer precision: 'volatile unsigned long' to 'uint8' (aka 'unsigned char') [-Wimplicit-int-conversion]
+      value = GPIO_PORTE_DATA_R;
+            ~ ^~~~~~~~~~~~~~~~~
+./MCAL/1. GPIO/Gpio_Private.h(81): note: expanded from macro 'GPIO_PORTE_DATA_R'
+#define GPIO_PORTE_DATA_R       (*((volatile unsigned long *)0x400243FC))
+                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MCAL/1. GPIO/Gpio_Program.c(582): warning: implicit conversion loses integer precision: 'volatile unsigned long' to 'uint8' (aka 'unsigned char') [-Wimplicit-int-conversion]
+      value = GPIO_PORTF_DATA_R;
+            ~ ^~~~~~~~~~~~~~~~~
+./MCAL/1. GPIO/Gpio_Private.h(82): note: expanded from macro 'GPIO_PORTF_DATA_R'
+#define GPIO_PORTF_DATA_R       (*((volatile unsigned long *)0x400253FC))
+                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+22 warnings generated.
+compiling Gpio_Program.c...
+HAL/LED/Led_Program.c(15): warning: In file included from...
+./HAL/LED/Led_Interface.h(16): warning: In file included from...
+./COMMON\Std_Types.h(19): warning: In file included from...
+./COMMON/Platform_Types.h(69): warning: 'long long' is an extension when C99 mode is not enabled [-Wlong-long]
+typedef unsigned long long*   uint64_ptr;
+                 ^
+./COMMON/Platform_Types.h(70): warning: 'long long' is an extension when C99 mode is not enabled [-Wlong-long]
+typedef signed long long*     sint64_ptr;
+               ^
+2 warnings generated.
+compiling Led_Program.c...
+APP/Led_Ctrl/App_LedCtrl_Program.c(15): warning: In file included from...
+./APP/Led_Ctrl/App_LedCtrl_Interface.h(16): warning: In file included from...
+./COMMON\Std_Types.h(19): warning: In file included from...
+./COMMON/Platform_Types.h(69): warning: 'long long' is an extension when C99 mode is not enabled [-Wlong-long]
+typedef unsigned long long*   uint64_ptr;
+                 ^
+./COMMON/Platform_Types.h(70): warning: 'long long' is an extension when C99 mode is not enabled [-Wlong-long]
+typedef signed long long*     sint64_ptr;
+               ^
+APP/Led_Ctrl/App_LedCtrl_Program.c(62): warning: missing field 'callBackFn' initializer [-Wmissing-field-initializers]
+    GPT_ConfigType Timer0Cfg = {TIMER0, 12500, 0xFFFFFFFF, CONTINUOUS};
+                                                                     ^
+APP/Led_Ctrl/App_LedCtrl_Program.c(18): warning: In file included from...
+./MCAL/3. GPT\Gpt_Interface.h(18): warning: In file included from...
+./MCAL/3. GPT/Gpt_Config.h(49): warning: padding struct 'GPT_ConfigType' with 3 bytes to align 'GPT_TickFrequency' [-Wpadded]
+    uint32 GPT_TickFrequency;
+           ^
+./MCAL/3. GPT/Gpt_Config.h(52): warning: padding struct 'GPT_ConfigType' with 3 bytes to align 'callBackFn' [-Wpadded]
+        void (*callBackFn)(void);
+               ^
+APP/Led_Ctrl/App_LedCtrl_Program.c(93): warning: // comments are not allowed in this language [-Wcomment]
+        // if((TIMER0_TAV_R >> 7) < OnCounts)
+        ^
+6 warnings generated.
+compiling App_LedCtrl_Program.c...
+MCAL/2. NVIC/Nvic_Program.c(15): warning: In file included from...
+./MCAL/2. NVIC/Nvic_Interface.h(17): warning: In file included from...
+./COMMON\Std_Types.h(19): warning: In file included from...
+./COMMON/Platform_Types.h(69): warning: 'long long' is an extension when C99 mode is not enabled [-Wlong-long]
+typedef unsigned long long*   uint64_ptr;
+                 ^
+./COMMON/Platform_Types.h(70): warning: 'long long' is an extension when C99 mode is not enabled [-Wlong-long]
+typedef signed long long*     sint64_ptr;
+               ^
+2 warnings generated.
+compiling Nvic_Program.c...
+MCAL/3. GPT/Gpt_Program.c(15): warning: In file included from...
+./MCAL/3. GPT/Gpt_Interface.h(17): warning: In file included from...
+./COMMON\Std_Types.h(19): warning: In file included from...
+./COMMON/Platform_Types.h(69): warning: 'long long' is an extension when C99 mode is not enabled [-Wlong-long]
+typedef unsigned long long*   uint64_ptr;
+                 ^
+./COMMON/Platform_Types.h(70): warning: 'long long' is an extension when C99 mode is not enabled [-Wlong-long]
+typedef signed long long*     sint64_ptr;
+               ^
+MCAL/3. GPT/Gpt_Program.c(55): warning: 10 enumeration values not explicitly handled in switch: 'TIMER2', 'TIMER3', 'TIMER4'... [-Wswitch-enum]
+    switch (configPtr->GPT_Id)
+            ^~~~~~~~~~~~~~~~~
+MCAL/3. GPT/Gpt_Program.c(15): warning: In file included from...
+./MCAL/3. GPT/Gpt_Interface.h(18): warning: In file included from...
+./MCAL/3. GPT/Gpt_Config.h(49): warning: padding struct 'GPT_ConfigType' with 3 bytes to align 'GPT_TickFrequency' [-Wpadded]
+    uint32 GPT_TickFrequency;
+           ^
+./MCAL/3. GPT/Gpt_Config.h(52): warning: padding struct 'GPT_ConfigType' with 3 bytes to align 'callBackFn' [-Wpadded]
+        void (*callBackFn)(void);
+               ^
+MCAL/3. GPT/Gpt_Program.c(94): warning: 11 enumeration values not explicitly handled in switch: 'TIMER1', 'TIMER2', 'TIMER3'... [-Wswitch-enum]
+    switch(id)
+           ^~
+MCAL/3. GPT/Gpt_Program.c(120): warning: implicit conversion changes signedness: 'int' to 'unsigned long' [-Wsign-conversion]
+        CLEAR_BIT(TIMER0_IMR_R, 0);
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~
+./COMMON\Common_Macros.h(31): note: expanded from macro 'CLEAR_BIT'
+#define CLEAR_BIT(REG,BIT) ( REG &= (~(1<<BIT)) )
+                                 ~~  ^~~~~~~~~
+MCAL/3. GPT/Gpt_Program.c(117): warning: 11 enumeration values not explicitly handled in switch: 'TIMER1', 'TIMER2', 'TIMER3'... [-Wswitch-enum]
+    switch (id)
+            ^~
+MCAL/3. GPT/Gpt_Program.c(142): warning: 11 enumeration values not explicitly handled in switch: 'TIMER1', 'TIMER2', 'TIMER3'... [-Wswitch-enum]
+    switch (id)
+            ^~
+MCAL/3. GPT/Gpt_Program.c(174): warning: implicit conversion changes signedness: 'int' to 'unsigned long' [-Wsign-conversion]
+        CLEAR_BIT(TIMER0_CTL_R, 0);
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~
+./COMMON\Common_Macros.h(31): note: expanded from macro 'CLEAR_BIT'
+#define CLEAR_BIT(REG,BIT) ( REG &= (~(1<<BIT)) )
+                                 ~~  ^~~~~~~~~
+MCAL/3. GPT/Gpt_Program.c(171): warning: 11 enumeration values not handled in switch: 'TIMER1', 'TIMER2', 'TIMER3'... [-Wswitch]
+    switch(id)
+           ^~
+MCAL/3. GPT/Gpt_Program.c(30): warning: no previous extern declaration for non-static variable 'PtrToCallBackFunctionTimer0' [-Wmissing-variable-declarations]
+void (*PtrToCallBackFunctionTimer0)(void);
+       ^
+MCAL/3. GPT/Gpt_Program.c(30): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+void (*PtrToCallBackFunctionTimer0)(void);
+^
+12 warnings generated.
+compiling Gpt_Program.c...
+assembling startup_TM4C123.s...
+RTE/Device/TM4C123GH6PM/system_TM4C123.c(13): warning: In file included from...
+C:/Users/MarwanGamalAhmedAbda/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123.h(98): warning: In file included from...
+C:/Users/MarwanGamalAhmedAbda/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(298): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/MarwanGamalAhmedAbda/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(338): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/MarwanGamalAhmedAbda/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(357): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/MarwanGamalAhmedAbda/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(713): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/MarwanGamalAhmedAbda/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(729): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/MarwanGamalAhmedAbda/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(774): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/MarwanGamalAhmedAbda/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(779): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/MarwanGamalAhmedAbda/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(872): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/MarwanGamalAhmedAbda/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(885): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/MarwanGamalAhmedAbda/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(892): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/MarwanGamalAhmedAbda/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(897): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/MarwanGamalAhmedAbda/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(904): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/MarwanGamalAhmedAbda/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(910): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/MarwanGamalAhmedAbda/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(917): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/MarwanGamalAhmedAbda/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(924): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/MarwanGamalAhmedAbda/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(929): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/MarwanGamalAhmedAbda/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(936): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/MarwanGamalAhmedAbda/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(942): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/MarwanGamalAhmedAbda/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(949): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/MarwanGamalAhmedAbda/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(956): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/MarwanGamalAhmedAbda/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(961): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/MarwanGamalAhmedAbda/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(968): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/MarwanGamalAhmedAbda/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(974): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/MarwanGamalAhmedAbda/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(981): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/MarwanGamalAhmedAbda/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(988): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/MarwanGamalAhmedAbda/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(993): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/MarwanGamalAhmedAbda/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1000): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/MarwanGamalAhmedAbda/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1006): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/MarwanGamalAhmedAbda/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1013): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/MarwanGamalAhmedAbda/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1020): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/MarwanGamalAhmedAbda/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1025): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/MarwanGamalAhmedAbda/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1032): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/MarwanGamalAhmedAbda/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1038): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/MarwanGamalAhmedAbda/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1045): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/MarwanGamalAhmedAbda/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1052): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/MarwanGamalAhmedAbda/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1057): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/MarwanGamalAhmedAbda/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1064): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/MarwanGamalAhmedAbda/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1070): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/MarwanGamalAhmedAbda/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1077): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/MarwanGamalAhmedAbda/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1084): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/MarwanGamalAhmedAbda/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1089): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/MarwanGamalAhmedAbda/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1096): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/MarwanGamalAhmedAbda/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1102): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/MarwanGamalAhmedAbda/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1251): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+RTE/Device/TM4C123GH6PM/system_TM4C123.c(19): warning: // comments are not allowed in this language [-Wcomment]
+//-------- <<< Use Configuration Wizard in Context Menu >>> ------------------
+^
+45 warnings generated.
+compiling system_TM4C123.c...
+linking...
+Program Size: Code=3716 RO-data=656 RW-data=0 ZI-data=616  
+".\Objects\ARM Project.axf" - 0 Error(s), 91 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.9.0.pack
+                ARM.CMSIS.5.9.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.6.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.TM4C_DFP.1.1.0.pack
+                Keil.TM4C_DFP.1.1.0
+                Texas Instruments Tiva C Series Device Support and Examples
+   * Component: Startup Version: 1.0.1
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/_Target_1
+  C:/Users/MarwanGamalAhmedAbda/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include
+  C:/Users/MarwanGamalAhmedAbda/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.6.0
+
+   * Component: Keil::Device:Startup:1.0.1
+      Include file:  Device/Include/TM4C123/TM4C123.h
+      Source file:   Device/Source/ARM/startup_TM4C123.s
+      Source file:   Device/Source/system_TM4C123.c
+Build Time Elapsed:  00:00:02
+</pre>
+</body>
+</html>
